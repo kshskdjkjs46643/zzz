@@ -1,50 +1,5 @@
-from requests import post as pp, get as gg;import random;import re;from user_agent import generate_user_agent as uu;import json;from uuid import uuid4;import time;from cfonts import render;import sys;import base64;import requests;import os;from concurrent.futures import ThreadPoolExecutor;from rich.console import Console;from rich.live import Live;import string;from threading import Thread;from asmix import Instagram;import threading
 
-hits,bad, bad2, gig, p1, bv = 0,0,0,0,0,0
-
-B="\033[1;30m"
-R="\033[1;31m"
-G="\033[1;32m"
-Y="\033[1;33m"
-Bl="\033[1;34m"
-P="\033[1;35m"
-C="\033[1;36m"
-N="\033[1;37m"
-A = '\033[2;34m'
-C = '\033[1;34m'
-E = '\033[1;33m'
-J = "\033[1;31m"
-I = '\033[1;32m'
-G = '\033[1;97m'
-H="\x1b[38;5;208m"
-
-M = '\x1b[1;37m' 
-b = random.randint(5,208)
-bo = f'\x1b[38;5;{b}m'
-j = random.randint(5,208)
-jo = f'\x1b[38;5;{j}m'
-
-cc = {
-    'red': "\033[1m\033[31m",
-    'green': "\033[1m\033[32m",
-    'yellow': "\033[1m\033[33m",
-    'blue': "\033[1m\033[34m",
-    'cyan': "\033[1m\033[36m",
-    'magenta': "\033[1m\033[35m",
-    'white': "\033[1m\033[37m",
-    'orange': "\033[1m\033[38;5;208m",
-    'reset': "\033[0m"
-}
-
-def fs(id):
-    sessionid = k.cookies['sessionid']
-    global p1
-    url = f'https://i.instagram.com/api/v1/friendships/{id}/followers/?count=100&search_surface=follow_list_pag'
-    headers = {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Cookie': f'mid=Y3bGYwALAAHNwaKANMB8QCsRu7VA; ig_did=092BD3C7-0BB2-414B-9F43-3170EAED8778; ig_nrcb=1; shbid=1685054; shbts=1675191368.6684434090; rur=CLN; ig_direct_region_hint=ATN; csrftoken=gLlFX76z8qqwDgmh8ZIp3uFhAeX4zKdO; ds_user_id=921803283; sessionid={sessionid}',
+=ATN; csrftoken=gLlFX76z8qqwDgmh8ZIp3uFhAeX4zKdO; ds_user_id=921803283; sessionid={sessionid}',
         'Sec-Ch-Prefers-Color-Scheme': 'dark',
         'Sec-Ch-Ua': '"Not.A/Brand";v="8", "Chromium";v="114", "Microsoft Edge";v="114"',
         'Sec-Ch-Ua-Full-Version-List': '"Not.A/Brand";v="8.0.0.0", "Chromium";v="114.0.5735.201", "Microsoft Edge";v="114.0.1823.67"',
