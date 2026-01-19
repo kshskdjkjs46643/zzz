@@ -1,7 +1,7 @@
 import hashlib
 import sys
 
-def _integrity_check():
+def _integrity_check(h):
     FILE = __file__
 
     with open(FILE, "rb") as f:
